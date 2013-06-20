@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
         printf("\n");
         exit(0);
     }
+
 //the commend is "myls filename"
     if (argc == 2){
         if ((dp = opendir(argv[1])) == NULL){
@@ -33,7 +34,14 @@ int main(int argc, char *argv[])
 
 //the commend is "myls -option filename"
     if (argc == 3){
-
+        switch (*(argv[1] + 1))
+        {
+        case 'l' ://{printf ("%s\n", argv[1]); exit(0);}
+        {
+            
+        }
+        defaule : exit(0);
+        }
     }
 
 //the commend is wrong
