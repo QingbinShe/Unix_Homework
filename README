@@ -1,0 +1,46 @@
+1.Description of the program
+----------------------------
+The purpose of this (last!) programming assignment is more of an emphasis on C systems­
+level programming along with more Standard C Library routines. It will build a limited
+version of the ls utility that we can call mylsthat will implement a small subset of
+ls options (­a, ­l, ­t, and ­r or ­altr). It can supply myls with any combination of 
+files and directories (directories are not searched recursively by default this will
+be an extra credit option).
+
+
+2.Compile it
+---------------------------
+Just typeing "make"
+
+
+3.Run it
+---------------------------
+After compiling the programing,you can run it by typeing:
+./myls : display all the file in the current directory
+./myls 'filename' : display all the file in 'filename'
+./myls -l 'filename' : display detail information of all the file in 'filename' 
+./myls -t 'filename' : display all the file in the order of modifytime in 'filename'
+./myls -r 'filename' : display all the file in the order of name in 'filename'
+./muls -a 'filename' : display all the file in 'filename'
+
+
+4.An example of output
+----------------------------
+When all the input is right, the output will be the list of filename.
+
+
+5.An example of error output
+----------------------------
+If the input is wrong, like the form is wrong, the output will be error output.
+
+
+6.Test
+----------------------------
+All the test is right.
+
+
+7.More information
+---------------------------
+If you don't want to read more, all you need to do is typeing "make" and typeing
+command in item "3.Run it". Affter that, you can typeing "make clean" to remove
+the file: myls,myls.o.
